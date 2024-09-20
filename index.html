@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TP JS HTML DOM</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<p id="demo"></p>
+	<h4 id="intro">Introduction</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus numquam voluptatem explicabo quod consectetur.
+		Eaque accusantium totam dignissimos nostrum cumque commodi saepe obcaecati possimus autem, ipsum corporis maxime?
+		Molestiae, unde?</p>
+
+	<h2>JavaScript HTML DOM</h2>
+	<p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+	<form id="frm1" action="">
+		First name: <input type="text" name="fname" value="ABOUBAKAR"><br>
+		Last name: <input type="text" name="lname" value="DIAMA"><br><br>
+		<input type="submit" value="Submit" id="myBtn1">
+	</form>
+
+	<p>These are the values of each element in the form:</p>
+
+	<p id="demo1"></p>
+
+	<!-- Charger l'image -->
+	<div class="changeImg">
+		<button type="button" onclick="charger()">Charger Image</button>
+		<img class="myImage" src="img/article1.jpg">
+
+	</div>
+
+	<!-- DOM Forms validation -->
+	<h2>JavaScript Validation</h2>
+
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+		Name: <input type="text" name="fname">
+		<input type="submit" value="Submit">
+	</form>
+
+	<!-- Example second -->
+	<p>Please input a number between 1 and 10:</p>
+
+	<input id="numb">
+
+	<button type="button" onclick="myFunction()">Submit</button>
+
+	<p id="demo2"></p>
+
+	<!-- DOM CSS Changer la couleur du titre-->
+	<h1 id="id1">Mon titre en rouge</h1>
+	<button type="button" onclick="document.getElementById('id1').style.color = 'red'">Cliquez ici</button>
+
+	<!-- DOM Animations -->
+	<h2>My First JavaScript Animation with DOM Animations</h2>
+	<div id="container">
+		<div id="animate"> Ma première animation</div>
+		<div id="animate2"> Ma seconde animation</div>
+
+	</div>
+
+	<p><button onclick="myMove()">Click Pour Deplacer le Box</button></p>
+	<p><button onclick="myMove2()">Click Pour Deplacer le cercle</button></p>
+
+	<!-- DOM Events -->
+	<h1 onclick="changeText(this)">Click sur ce texte du DOM Events</h1>
+	<h1 class="dateT">Date et Heure</h1>
+	<button type="button" onclick="displayDate()">Clik to display Date</button>
+	<p id="dat"></p>
+
+	<!-- DOM EventListener() -->
+	<h2>JavaScript addEventListener()</h2>
+
+	<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+
+	<button id="myBtn2">Try it</button>
+
+	<!-- 2e demo -->
+	<p>Cet exemple utilise la méthode addEventListener() pour ajouter plusieurs événements sur le même bouton.</p>
+
+	<button id="myBtn3">Teste ça</button>
+
+	<p id="demo3"></p>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
